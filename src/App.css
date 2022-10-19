@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root{
+  --dark-black : #0A0A0B;
+  --pryBlue: #2F80ED;
+  --theOrange: #C98218;
+  --dimBlue: #9BBBE5;
+  --paleBlue: #DDECFF;
+  --offWhite: #F8F8F8;
+  --pryWhite: #ffffff;
+  --black300: #2D2D2D;
+  --black200: #383838;
+  --gray700: #828282;
+  --gray500: #AEAEAE;
+  --gray300: #BFBFBF;
+  --gray200: #C7C7C7;
+  --dangerRed: rgb(218, 50, 50);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,select{
+  width: 96%;
+  padding: 0 2%;
+  font-size: 1.2rem;
+  color: var(--black300);
+  border-radius: 5px;
+  border: 1px solid var(--gray200);
+  background-color: var(--offWhite);
+  line-height:2.7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select{
+  width: 100%;
+  padding: 2% 0!important;
 }
 
-.App-link {
-  color: #61dafb;
+input:focus, select:focus{
+  outline-style: none;
+  outline-color: transparent;
+  background-color: var(--pryWhite);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+input::-webkit-input-placeholder {
+  color: var(--gray200);
+}
+
+input::-ms-input-placeholder {
+  color: var(--gray200);
 }

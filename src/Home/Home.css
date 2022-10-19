@@ -1,0 +1,311 @@
+:root{
+    --dark-black : #0A0A0B;
+    --pryBlue: #2F80ED;
+    --theOrange: #C98218;
+    --dimBlue: #9BBBE5;
+    --paleBlue: #DDECFF;
+    --offWhite: #F8F8F8;
+    --pryWhite: #ffffff;
+    --black300: #2D2D2D;
+    --black200: #383838;
+    --gray700: #828282;
+    --gray500: #AEAEAE;
+    --gray300: #BFBFBF;
+    --gray200: #C7C7C7;
+    --dangerRed: #da3232;
+  }
+
+
+
+.containerClass{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainBarDiv{
+    width: 90%;
+    padding: 5%;
+    margin-left: 10%;
+}
+
+.homeApp{
+    display: flex;
+    width: 100%;
+    padding: 0% 0;
+}
+.sideBarDiv{
+    position: fixed;
+    z-index: 1;
+    width: 10%;
+    background-color: var(--pryBlue);
+    height: 100vh;
+    padding-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+
+.sideBarDiv img{
+    width: 50px;
+    height: 85px
+}
+.progressStatusDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+.headerTitle{
+    margin-bottom: 4%;
+}
+
+.headerTitle h1{
+    font-size: 2rem;
+    color: var(--dark-black);
+}
+.headerTitle p{
+    font-size: 1rem;
+    color: var(--black300);
+}
+
+.stepContainer{
+    width: 15%;
+}
+
+#rightAlign{
+    display: flex;
+    flex-direction: column;
+}
+.currentStep{
+    color: var(--dark-black);
+}
+
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.notDone{
+    background-color: var(--offWhite);
+    color: var(--black300);
+    font-weight: 200;
+}
+
+.doneStep{
+    background-color: var(--pryBlue);
+    color: var(--pryWhite)!important;
+    font-weight: 200;
+}
+
+.current{
+    font-weight: 200;
+    color:var(--black300);
+    background-color: var(--dimBlue);
+}
+
+.disabledStep{
+    color: var(--gray200);
+    font-weight: 200;
+}
+
+.acceptanceDiv{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.acceptanceDiv p{
+    margin-bottom: 3%;
+}
+
+.warningRed{
+    color: var(--dangerRed);
+}
+
+.accessCode{
+    width: 98%;
+    padding: 0 2%;
+    border-radius: 5px;
+    border: 1px solid var(--gray200);
+    background-color: var(--offWhite);
+    line-height:2.7rem;
+}
+
+.stepForm{
+    width: 100%;
+}
+
+.inputGroup{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.formLabel{
+    display: inline-block;
+    font-size: 0.9rem;
+    color: var(--black200);
+    margin-bottom: 2%;
+}
+
+.inputDiv{
+    width: 45%;
+    display: flex;
+    flex-direction: column
+}
+.formInput{
+    width: 100%;
+}
+
+.PhoneInput{
+    width: 105%;
+}
+
+.btnDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.nextBtn,.pryBtn{
+    cursor: pointer;
+    width: 30%;
+    padding: 1% 0!important;
+    background-color: var(--dark-black)!important;
+    font-weight: 300!important;
+    color: var(--pryWhite);
+    text-align: center;
+}
+.pryBtn{
+    cursor: pointer;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none!important;
+}
+.prevBtn{
+    cursor: pointer;
+    width: 30%;
+    padding: 1% 0!important;
+    color: var(--black200)!important;
+    font-weight: 300!important;
+    background-color: var(--paleBlue)!important;
+}
+
+.fullInput{
+    width: 95%;
+}
+.passwordDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row!important;
+}
+
+.passwordInput{
+    width: 100%;
+}
+
+.btn-outline-primary{
+    display: none;
+}
+
+.congratsTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confettiPng{
+    width: 40%;
+    margin-top: 7%;
+}
+
+
+@media screen 
+and (min-device-width: 350px) 
+and (max-device-width: 449px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .mainBarDiv{
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+        margin-left: 0;
+        padding:0 5%;
+    }
+    .sideBarDiv{
+        display: none;
+    }
+    .headerTitle h1, .acceptanceDiv h1{
+        font-size: 1.3rem;
+        color: var(--dark-black);
+    }
+    .headerTitle p, .acceptanceDiv p{
+        font-size: 0.8rem;
+        color: var(--black300);
+    }
+    .headerTitle{
+        margin-bottom: 7%;
+    }
+
+    .hideStep {
+        display: none!important;
+    }
+
+    .progressStatusDiv{
+        justify-content: center;
+        align-items: center;
+    }
+    .stepContainer{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+    .mobielActive{
+        background-color: var(--pryBlue)!important;
+    }
+    .acceptanceDiv{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .inputGroup{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputDiv{
+        width: 95%;
+    }
+    .accessCode {
+        width: 95%;
+    }
+    .formInput{
+        width: 96%;
+    }
+    .inputDiv{
+        margin-bottom: 8%;
+    }
+    .nextBtn, .prevBtn{
+        width: 100%;
+        padding: 3% 0!important;
+        margin-bottom: 7%;
+    }
+    .pryBtn{
+        margin-top: 10%;
+        width: 100%;
+        border-radius: 5px;
+    }
+}
