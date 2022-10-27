@@ -34,9 +34,13 @@ input,select{
   line-height:2.7rem;
 }
 
-select{
+select {
   width: 100%;
-  padding: 2% 0!important;
+  padding: 2% 1%!important;
+}
+
+.disabledText{
+  color: var(--gray200)!important;
 }
 
 input:focus, select:focus{
@@ -47,10 +51,10 @@ input:focus, select:focus{
 
 
 
-input::-webkit-input-placeholder {
-  color: var(--gray200);
+input::-webkit-input-placeholder, option:disabled {
+  color: var(--gray200)!important;
 }
 
 input::-ms-input-placeholder {
-  color: var(--gray200);
+  color: var(--gray200)!important;
 }
